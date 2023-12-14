@@ -9,6 +9,7 @@
 # Importing module and file handling functions
 import os.path
 
+#Reading and writing to text file
 def write_to_file(file_path, content):
     with open(file_path, 'w') as file:
         file.write(content)
@@ -86,7 +87,7 @@ def test_check_win():
     assert check_win(test_board) == (True, "X")
 
 
-# Reading and writing to text file
+# Storing game status
 file_name = "final.txt"
 file_path = f"./final/{file_name}"  
 
